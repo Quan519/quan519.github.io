@@ -1,6 +1,6 @@
 // Skill data configuration file
 // Used to manage data for the skill display page
-const skillModules = import.meta.glob('../content/skills/*.json', { eager: true });
+const skillModules = import.meta.glob('../content/技能/*.json', { eager: true });
 
 export interface Skill {
     id: string;

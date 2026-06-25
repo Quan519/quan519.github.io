@@ -6,24 +6,24 @@ media:
     output: /assets/images
     categories: [image]
   - name: posts
-    label: Posts Images
-    input: src/content/posts
-    output: /src/content/posts
+    label: 文章图片
+    input: src/content/文章
+    output: /src/content/文章
     categories: [image]
   - name: diary
-    label: Diary Images
-    input: src/content/diary
-    output: /src/content/diary
+    label: 日记图片
+    input: src/content/日记
+    output: /src/content/日记
     categories: [image]
   - name: albums
-    label: Albums Images
-    input: src/content/albums
-    output: /src/content/albums
+    label: 相册图片
+    input: src/content/相册
+    output: /src/content/相册
     categories: [image]
   - name: projects
-    label: Projects Images
-    input: src/content/projects
-    output: /src/content/projects
+    label: 项目图片
+    input: src/content/项目
+    output: /src/content/项目
     categories: [image]
 
 
@@ -35,9 +35,9 @@ content:
     # 集合名称
     name: posts
     # 后台显示标签
-    label: Posts
+    label: 文章
     # 内容存储目录
-    path: src/content/posts
+    path: src/content/文章
     # 是否支持子文件夹
     subfolders: true
     # 文件命名规则
@@ -59,9 +59,9 @@ content:
     # 集合名称
     name: diary
     # 后台显示标签
-    label: Diary
+    label: 日记
     # 内容存储目录
-    path: src/content/diary
+    path: src/content/日记
     # 文件命名规则
     filename: "{year}-{month}-{day}-{hour}-{minute}.json"
     # 字段列表
@@ -76,9 +76,9 @@ content:
     # 集合名称
     name: albums
     # 后台显示标签
-    label: Albums
+    label: 相册
     # 内容存储目录
-    path: src/content/albums
+    path: src/content/相册
     # 文件命名规则
     filename: "{slug}.json"
     # 字段列表
@@ -110,9 +110,9 @@ content:
     # 集合名称
     name: projects
     # 后台显示标签
-    label: Projects
+    label: 项目
     # 内容存储目录
-    path: src/content/projects
+    path: src/content/项目
     # 文件命名规则
     filename: "{slug}.json"
     # 字段列表
@@ -135,9 +135,9 @@ content:
     # 集合名称
     name: skills
     # 后台显示标签
-    label: Skills
+    label: 技能
     # 内容存储目录
-    path: src/content/skills
+    path: src/content/技能
     # 文件命名规则
     filename: "{slug}.json"
     # 字段列表
@@ -162,9 +162,9 @@ content:
     # 集合名称
     name: timeline
     # 后台显示标签
-    label: Timeline
+    label: 时间线
     # 内容存储目录
-    path: src/content/timeline
+    path: src/content/时间线
     # 文件命名规则
     filename: "{slug}.json"
     # 字段列表
@@ -196,9 +196,9 @@ content:
     # 集合名称
     name: friends
     # 后台显示标签
-    label: Friends
+    label: 友链
     # 内容存储目录
-    path: src/content/friends
+    path: src/content/友链
     # 文件命名规则
     filename: "{slug}.json"
     # 字段列表
@@ -212,8 +212,8 @@ content:
   # 友链页面
   - type: file
     name: page_friends
-    label: Friends Page
-    path: src/content/friends.md
+    label: 友链页面
+    path: src/content/友链.md
     fields:
       #- { name: title, label: Title, type: string, required: false }
       #- { name: description, label: Description, type: string, required: false }
@@ -222,8 +222,8 @@ content:
   # 关于页面
   - type: file
     name: page_about
-    label: About Page
-    path: src/content/about.md
+    label: 关于页面
+    path: src/content/关于.md
     fields:
       #- { name: title, label: Title, type: string, required: false }
       #- { name: description, label: Description, type: string, required: false }

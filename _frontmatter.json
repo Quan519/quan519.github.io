@@ -5,8 +5,8 @@
     "frontMatter.content.publicFolder": "public",
     "frontMatter.content.pageFolders": [
         {
-            "title": "posts",
-            "path": "[[workspace]]/src/content/posts"
+            "title": "文章",
+            "path": "[[workspace]]/src/content/文章"
         }
     ],
     "frontMatter.taxonomy.contentTypes": [

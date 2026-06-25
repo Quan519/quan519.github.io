@@ -12,7 +12,7 @@ import GridLayout from "@layouts/grid.astro";
 import BackwardButton from "@components/backwardButton.astro";
 
 
-const aboutPost = await getEntry("spec", "about");
+const aboutPost = await getEntry("spec", "关于");
 if (!aboutPost) {
     throw new Error("About page content not found");
 }

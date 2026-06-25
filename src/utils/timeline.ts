@@ -1,6 +1,6 @@
 // Timeline data configuration file
 // Used to manage data for the timeline page
-const timelineModules = import.meta.glob('../content/timeline/*.json', { eager: true });
+const timelineModules = import.meta.glob('../content/时间线/*.json', { eager: true });
 
 export interface TimelineItem {
     id: string;

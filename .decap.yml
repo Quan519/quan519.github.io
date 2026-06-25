@@ -24,9 +24,9 @@ collections:
         # 集合名称
         name: "posts"
         # 后台显示标签
-        label: "Posts"
+        label: "文章"
         # 内容存储目录
-        folder: "src/content/posts"
+        folder: "src/content/文章"
         # 目录嵌套配置
         meta:
             # 路径配置
@@ -85,9 +85,9 @@ collections:
         # 集合名称
         name: "diary"
         # 后台显示标签
-        label: "Diary"
+        label: "日记"
         # 内容存储目录
-        folder: "src/content/diary"
+        folder: "src/content/日记"
         # 条目路径配置
         path: "{{slug}}/{{slug}}" # {文件夹}/{文件名}
         # 允许创建新条目
@@ -119,9 +119,9 @@ collections:
         # 集合名称
         name: "albums"
         # 后台显示标签
-        label: "Albums"
+        label: "相册"
         # 内容存储目录
-        folder: "src/content/albums"
+        folder: "src/content/相册"
         # 条目路径配置
         path: "{{slug}}/{{slug}}" # {文件夹}/{文件名}
         # 允许创建新条目
@@ -176,9 +176,9 @@ collections:
         # 集合名称
         name: "projects"
         # 后台显示标签
-        label: "Projects"
+        label: "项目"
         # 内容存储目录
-        folder: "src/content/projects"
+        folder: "src/content/项目"
         # 条目路径配置
         path: "{{slug}}/{{slug}}" # {文件夹}/{文件名}
         # 允许创建新条目
@@ -221,9 +221,9 @@ collections:
         # 集合名称
         name: "skills"
         # 后台显示标签
-        label: "Skills"
+        label: "技能"
         # 内容存储目录
-        folder: "src/content/skills"
+        folder: "src/content/技能"
         # 允许创建新条目
         create: true
         # 文件命名规则
@@ -262,9 +262,9 @@ collections:
         # 集合名称
         name: "timeline"
         # 后台显示标签
-        label: "Timeline"
+        label: "时间线"
         # 内容存储目录
-        folder: "src/content/timeline"
+        folder: "src/content/时间线"
         # 允许创建新条目
         create: true
         # 文件命名规则
@@ -314,9 +314,9 @@ collections:
         # 集合名称
         name: "friends"
         # 后台显示标签
-        label: "Friends"
+        label: "友链"
         # 内容存储目录
-        folder: "src/content/friends"
+        folder: "src/content/友链"
         # 允许创建新条目
         create: true
         # 文件命名规则
@@ -340,13 +340,13 @@ collections:
         # 集合名称
         name: "page_friends"
         # 后台显示标签
-        label: "Friends Page"
+        label: "友链页面"
         # 文件列表
         files:
             - # friends.md
                 name: "friends"
-                label: "Friends"
-                file: "src/content/friends.md"
+                label: "友链"
+                file: "src/content/友链.md"
                 fields:
                     #- # 名称
                     #    { name: "title", label: "Title", widget: "string", required: false }
@@ -359,13 +359,13 @@ collections:
         # 集合名称
         name: "page_about"
         # 后台显示标签
-        label: "About Page"
+        label: "关于页面"
         # 文件列表
         files:
             - # about.md
                 name: "about"
-                label: "About"
-                file: "src/content/about.md"
+                label: "关于"
+                file: "src/content/关于.md"
                 fields:
                     #- # 名称
                     #    { name: "title", label: "Title", widget: "string", required: false }
