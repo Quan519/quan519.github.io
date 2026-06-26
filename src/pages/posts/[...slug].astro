@@ -63,7 +63,24 @@ const { Content, headings } = await render(entry);
 const { remarkPluginFrontmatter } = await render(entry);
 
 // 处理加密逻辑
-let isEncrypted = !!(entry.data.encrypted && entry.data.password);
+// 优先从环境变量读取密码，避免把真实密码写进公开仓库。
+// 文章 frontmatter 示例：
+// encrypted: true
+// passwordEnv: "PRIVATE_GALLERY_PASSWORD"
+const envPasswordKey = entry.data.passwordEnv;
+const envPassword = envPasswordKey
+    ? (import.meta.env as Record<string, string | undefined>)[envPasswordKey]
+    : "";
+const encryptionPassword = envPassword || entry.data.password || "";
+let isEncrypted = !!entry.data.encrypted;
+
+if (isEncrypted && !encryptionPassword) {
+    throw new Error(
+        `Encrypted post "${entry.id}" is missing a password. ` +
+        `Set passwordEnv in the post frontmatter and define that env variable, ` +
+        `or set password directly for non-public/local-only use.`
+    );
+}
 
 dayjs.extend(utc);
 const lastModified = dayjs(entry.data.updated || entry.data.published)
@@ -218,7 +235,7 @@ const jsonLd = {
             }
             <PasswordProtection
                 isEncrypted={isEncrypted}
-                password={entry.data.password}
+                password={encryptionPassword}
             >
                 <Markdown class="mb-6 markdown-content onload-animation-up">
                     <Content />

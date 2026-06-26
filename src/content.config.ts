@@ -48,6 +48,7 @@ const postsCollection = defineCollection({
         /* Page encryption fields */
         encrypted: z.boolean().optional().default(false),
         password: z.string().optional().default(""),
+        passwordEnv: z.string().optional().default(""),
 
         /* Custom routeName */
         routeName: z.string().optional(),

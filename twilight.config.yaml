@@ -174,13 +174,13 @@ navbar:
             "Archive"
         - # 一级导航链接 - 展览 (自定义)
             # 导航名称
-            name: "Exhibition"
+            name: "展览"
             # 导航链接
             url: "/exhibition/"
             # 导航图标
             icon: "material-symbols:person"
             # 导航描述
-            description: "A collection of my creative works and experiences"
+            description: "貌似没什么值得展示的"
             # 子链接
             children:
                 - # 二级导航链接 - 项目 (预设)
@@ -193,10 +193,8 @@ navbar:
                     "Diary"
                 - # 二级导航链接 - 相册 (预设)
                     "Albums"
-                - # 二级导航链接 - 动画 (预设)
-                    "Anime"
-        - # 一级导航链接 - 好友 (预设)
-            "Friends"
+                #- # 二级导航链接 - 动画 (预设)
+                 #   "Anime"
         - # 一级导航链接 - 关于 (预设)
             "About"
 
@@ -403,7 +401,7 @@ musicPlayer:
     # 启用音乐播放器功能
     enable: true
     # 默认模式 ("meting" API | "local" 本地)
-    mode: "meting"
+    mode: "local"
     # meting 模式专属配置
     meting:
         # Meting API 地址
@@ -433,8 +431,8 @@ musicPlayer:
                 lrc: "assets/music/深海之息.lrc"
                 # 时长
                 duration: 146
-    # 是否自动播放
-    autoplay: true
+    # 是否自动播放。关闭后，打开网站只加载播放器，不会自动重新播放。
+    autoplay: false
 
 # 看板娘配置
 pio:
